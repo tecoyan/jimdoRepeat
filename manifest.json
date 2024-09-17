@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "Jimdoリピートプラグイン",
+  "version": "1.0",
+  "description": "jimdoのyoutubeをリピートするプラグインです。",
+  "background": {
+    "service_worker":"jimdo_repeat_background.js",
+    "type": "module"
+  },
+      "externally_connectable": {
+    "matches": ["https://*/*"
+    ]
+  },
+  
+  "content_security_policy": {
+      "extension_pages": "script-src 'self'  'wasm-unsafe-eval'; object-src 'self'; "
+  },
+  "content_scripts": [{
+    "matches": ["https://*/*"],
+        "js": ["jquery.js","jquery-ui.js","jimdo_repeat_content.js"],
+        "css": ["jquery-ui.css"]     
+         
+  }],
+  "permissions": [
+  "webNavigation",
+  "scripting",
+  "activeTab",      
+  "tabs"
+  ],      
+  "action": {
+     "default_title": "Jimdoリピートプラグイン",
+     "default_icon":{
+      "19": "yy19plus.png",
+      "96": "jimdo96.png",      
+      "128": "128jimdo_repeat.png"      
+    }
+  },
+  "host_permissions": [
+  "<all_urls>"
+  ]
+
+}
