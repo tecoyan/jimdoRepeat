@@ -17,7 +17,7 @@
   },
   "content_scripts": [{
     "matches": ["https://*/*"],
-        "js": ["jquery.js","jquery-ui.js","jimdo_repeat_content.js"],
+        "js": ["jquery.js","jquery-ui.js","sample_content.js"],
         "css": ["jquery-ui.css"]     
          
   }],
