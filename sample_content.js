@@ -126,7 +126,7 @@ $("body").on('click', (e) => {
                 html += "<div id='pop' style='z-index:9999;padding:13px;overflow:scroll;background-color:lightpink;position:fixed;top:0%;left:50%;width:800px;height:550px;'>\n\
 <h2 style='float:left;background-color:lightyellow;'>動画データ(デバッグエイド)</h2>\n\
 <span id='hover' style='position:absolute;margin-top:1.5%;margin-left:1%;background-color:lightgreen;width:400px;height:25px;float:left;'></span><br>\n\
-<button id='tabId' style='position:absolute;top:7%;left:0%;zoom:1.1;margin-top:10px;margin-left:10px;float:left;'>tabId取得</button>\n\
+<button id='tabId' title='先にこのボタンでtabIdを設定してから、他のボタンのテストを行います。' style='position:absolute;top:7%;left:0%;zoom:1.1;margin-top:10px;margin-left:10px;float:left;'>tabId取得</button>\n\
 <button id='frameIds' style='position:absolute;top:7%;left:10%;zoom:1.1;margin-top:10px;margin-left:10px;float:left;'>frameIds取得</button>\n\
 <button id='webNavi' style='position:absolute;top:9%;left:24.3%;zoom:1.3;float:right;'>webNavi</button>\n\
 <button id='save_disp' style='position:absolute;top:9%;left:35%;float:right;'>表示</button>\n\
